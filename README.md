@@ -2,9 +2,11 @@
 Progressive Web Apps
 
 Acerca de myjson
+
 El servicio myjson permite almacenar información en formato JSON para poder acceder a ella desde cualquier cliente HTTP.
 
 Tareas
+
 En primer lugar, para no repetir el código de lectura/escritura en myjson a lo largo de la aplicación, debe implementar este código en las funciones getAPI y updateAPI. Debe completar estas funciones para que hagan lo siguiente (se recomienda hacer uso de la función fetch de JavaScript):
 
 getAPI: Realiza una petición asíncrona a la URL almacenada en localStorage.URL y devuelve la información recibida.
@@ -24,6 +26,7 @@ Delete: Elimina una película del modelo. Debe pedir la confirmación del usuari
 Reset: Restaura el modelo al estado inicial, guardando las tres películas iniciales en localStorage.
 
 Objetivos
+
 Transformar una aplicación web en una PWA. Entender la potencia de las PWA y todas las posibilidades que ofrecen.
 
 Arrancar la aplicación web El fichero server.js contiene un servidor muy simple que tan solo sirve archivos estáticos que se encuentren en la carpeta "public" y redirige el tráfico http a https (condición indispensable para las PWAs). Para ejecutar dicho servidor y poder ver nuestra aplicación web funcionando ejecutamos:
