@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mis Pel&iacute;culas (Ing. Julio Ortiz)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="películas, favoritas, movies, videos" />
+	<meta name="description" content="Mis películas favoritas y sus detalles" />
+	<meta name="theme-color" content="#6200ee">
+	<meta name="apple-mobile-web-app-title" "Pelis">
+	<meta name="apple-mofle-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="files/icons/camera192.png">
+	<link rel="manifest" href="files/manifest.json">
+	<link rel="icon" href="image/julio_foto.ico">
+	<link rel="stylesheet" href="CSS/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1>Mis Películas Favoritas (Ing. Julio Ortiz)</h1>
+	<button id="butInstall" aria-label="Install" hidden>INSTALAR APP PELICULAS...</button>
+	<div id="main">
+		Cargando...
+	</div>
+
+	<script>
+		if('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('service-worker.js').then((reg) => {
+					console.log("Service worker registered ", reg);
+				})
+			})
+		}
+	</script>
+	<script src="files/install.js"></script>
+	<script src="JS/ajax.js"></script>
+
+</body>
+
+</html>
